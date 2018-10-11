@@ -1,3 +1,37 @@
 <FlexboxLayout flexDirection="column-reverse" class="page page-content">
-    <Button class="btn btn-primary btn-active" id="button" text="Start!" (tap)="onTap($event)"></Button>
+    <Button class="btn btn-primary btn-active" id="button" [text]="buttonText" (tap)="start()"></Button>
+
+    <Progress [value]="progressValue"
+              (valueChanged)="onSliderValueChange($event)"
+              maxValue="100" class="m-20">
+    </Progress>
+
+    <GridLayout class="m-15" rows="auto auto" columns="50 * 50">
+        <Slider row="1" col="1" value="10" (valueChange)="onSliderChange({set: 'walk', value: floor($event.value) })"
+                minValue="0"
+                maxValue="100">
+        </Slider>
+    </GridLayout>
+
+    <GridLayout class="m-15" rows="auto auto" columns="50 * 50">
+        <Slider row="1" col="1" value="10" (valueChange)="onSliderChange({set: 'run', value: floor($event.value)})"
+                minValue="0"
+                maxValue="100">
+        </Slider>
+    </GridLayout>
+
+    <GridLayout class="m-15" rows="auto auto" columns="50 * 50">
+        <Slider row="1" col="1" value="10" (valueChange)="onSliderChange({set: 'sprint', value: floor($event.value)})"
+                minValue="0"
+                maxValue="100">
+        </Slider>
+    </GridLayout>
+
+    <Label class="h3 p-15"
+           [text]="'Walk: ' + walk + ' - ' + 'Run: ' + run + ' - ' + 'Sprint: ' + sprint"
+           textWrap="true" style="text-align:center;"></Label>
+    <Label class="h1 p-15" [text]="text" textWrap="true" style="text-align:center;"></Label>
+
+    <Button text="&#xf105;" class="font-awesome"></Button>
 </FlexboxLayout>
+
