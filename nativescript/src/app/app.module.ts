@@ -5,6 +5,9 @@ import { AppRoutingModule, COMPONENTS } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { CoreModule } from "./core/core.module";
 
+import { AppService } from '@cerebral/angular'
+import AppFactory from "./main"
+
 @NgModule({
     bootstrap: [
         AppComponent
@@ -17,6 +20,13 @@ import { CoreModule } from "./core/core.module";
     declarations: [
         AppComponent,
         ...COMPONENTS
+    ],
+    providers: [
+      {
+        provide: AppService,
+        useFactory: AppFactory,
+        deps: []
+      },
     ],
     schemas: [
         NO_ERRORS_SCHEMA
