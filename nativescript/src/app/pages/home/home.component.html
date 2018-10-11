@@ -1,12 +1,12 @@
 <ActionBar class="action-bar">
-    <Label class="action-bar-title" text="Home 12345"></Label>
-
+    <Label class="action-bar-title" text="Fat Cat Interval Timer"></Label>
 </ActionBar>
 
-<GridLayout class="page page-content">
-    <ListView [items]="items" class="list-group">
-        <ng-template let-item="item">
-            <Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="list-group-item"></Label>
-        </ng-template>
-    </ListView>
-</GridLayout>
+<FlexboxLayout flexDirection="column-reverse" class="page page-content">
+    <!--<ListView [items]="items" class="list-group">-->
+        <!--<ng-template let-item="item">-->
+            <!--<Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="list-group-item"></Label>-->
+        <!--</ng-template>-->
+    <!--</ListView>-->
+    <Button class="btn btn-primary btn-active" id="button" text="Tap me!" (tap)="onTap($event)"></Button>
+</FlexboxLayout>

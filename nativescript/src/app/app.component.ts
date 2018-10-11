@@ -22,4 +22,8 @@ export class AppComponent implements OnInit {
 
         return iconPrefix + icon;
     }
+
+    onTap() {
+        console.log('on tap')
+    }
 }

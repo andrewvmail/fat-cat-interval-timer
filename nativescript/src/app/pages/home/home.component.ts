@@ -15,4 +15,11 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
         this.items = this.itemService.getItems();
     }
+
+    onTap(args) {
+      // let button = args.object;
+
+      // this.counter++;
+      // alert("Tapped " + this.counter + " times!");
+    }
 }
