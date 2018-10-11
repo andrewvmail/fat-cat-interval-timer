@@ -2,10 +2,10 @@ import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
-import { BrowseComponent } from "./browse/browse.component";
-import { HomeComponent } from "./home/home.component";
-import { ItemDetailComponent } from "./item-detail/item-detail.component";
-import { SearchComponent } from "./search/search.component";
+import { BrowseComponent } from "./pages/browse/browse.component";
+import { HomeComponent } from "./pages/home/home.component";
+import { ItemDetailComponent } from "./pages/item-detail/item-detail.component";
+import { SearchComponent } from "./pages/search/search.component";
 
 export const COMPONENTS = [BrowseComponent, HomeComponent, ItemDetailComponent, SearchComponent];
 
