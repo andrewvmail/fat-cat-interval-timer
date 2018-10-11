@@ -1,13 +1,18 @@
-import { AppService } from '@cerebral/angular'
-
 import App from "cerebral";
+import Devtools from "cerebral/devtools";
 
-const app = App({
-  state: {
-    hello: 'world'
+const app = App(
+  {
+    state: {
+      hello: "world"
+    },
+    providers: {}
   },
-  providers: {
+  {
+    devtools: Devtools({
+      host: "192.168.50.197:9999"
+    })
   }
-});
+);
 
-export default () => app
+export default () => app;
