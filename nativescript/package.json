@@ -27,6 +27,7 @@
     "@cerebral/angular": "^4.0.0",
     "cerebral": "^5.0.0",
     "nativescript-angular": "~6.1.0",
+    "nativescript-nodeify": "^0.8.0",
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.10",
     "rxjs": "~6.2.0",
