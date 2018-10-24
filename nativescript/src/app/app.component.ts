@@ -16,12 +16,28 @@ import {
 } from "@angular/core";
 import { connect, AppService, CerebralComponent } from "@cerebral/angular";
 import { sequences, state } from "cerebral/tags";
+import { ListPicker } from "tns-core-modules/ui/list-picker";
+
+let pokemonList = [
+  "Bulbasaur",
+  "Parasect",
+  "Venonat",
+  "Venomoth",
+  "Diglett",
+  "Dugtrio",
+  "Meowth",
+  "Persian",
+  "Psyduck",
+  "Arcanine",
+  "Poliwrath",
+  "Machoke"
+];
 
 @Component({
   selector: "ns-app",
   moduleId: module.id,
   templateUrl: "app.component.html",
-  styleUrls: ["./app.component.scss"]
+  styleUrls: ["./app.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 @connect({
@@ -37,10 +53,23 @@ import { sequences, state } from "cerebral/tags";
 export class AppComponent extends CerebralComponent {
   @ViewChild("control") control;
   prevDeltaX = 0;
+  public pokemons: Array<string> = [];
+  public picked: string;
+
+
+  public hours = Array(23).join().split(',').map(function(a){return this.i++},{i:1});
+  public minutes = Array(59).join().split(',').map(function(a){return this.i++},{i:1});
+  public seconds = Array(59).join().split(',').map(function(a){return this.i++},{i:1});
 
   constructor(private cdr: ChangeDetectorRef, private controller: AppService) {
     super(cdr, controller);
-    statusBar.hide();
+    console.log('constructor')
+    if(isIOS) {
+      statusBar.hide();
+    }
+    for (let i = 0; i < pokemonList.length; i++) {
+      this.pokemons.push(pokemonList[i]);
+    }
   }
   onPan(args) {
     if (args.state === 1) {
@@ -55,5 +84,11 @@ export class AppComponent extends CerebralComponent {
       // finger up
       this.prevDeltaX = args.deltaX;
     }
+  }
+  public selectedIndexChanged(args) {
+    console.log('hello')
+
+    // let picker = <ListPicker>args.object;
+    // this.picked = this.pokemons[picker.selectedIndex];
   }
 }

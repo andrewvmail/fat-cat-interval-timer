@@ -1,3 +1,37 @@
-<AbsoluteLayout backgroundColor="black">
-    <StackLayout (pan)="onPan($event)"#control height="100%" width="5%" backgroundColor="white"></StackLayout>
-</AbsoluteLayout>
+<StackLayout backgroundColor="black">
+    <DockLayout width="100%" height="25%" backgroundColor="white" stretchLastChild="true">
+        <Label width="27.5%" col="1" backgroundColor="black"></Label>
+        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="hours"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <Label width="27.5%" col="1" backgroundColor="black"></Label>
+    </DockLayout>
+    <DockLayout width="100%" height="33.33%" backgroundColor="white" stretchLastChild="true">
+        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="hours"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="minutes"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="seconds"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+    </DockLayout>
+    <DockLayout width="100%" height="33.33%" backgroundColor="white" stretchLastChild="true">
+        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="hours"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="minutes"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="seconds"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+    </DockLayout>
+</StackLayout>
