@@ -1,37 +1,86 @@
 <StackLayout backgroundColor="black">
-    <DockLayout width="100%" height="25%" backgroundColor="white" stretchLastChild="true">
-        <Label width="27.5%" col="1" backgroundColor="black"></Label>
-        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="hours"
-                    selectedIndex="0"
-                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+
+    <DockLayout width="100%" height="20%" backgroundColor="black" stretchLastChild="true">
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="31%" fontSize="40"
+               text="Walk" color="white" col="1" backgroundColor="black"></Label>
         <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"
                     selectedIndex="0"
                     (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Min"
+               color="white" col="1" backgroundColor="black"></Label>
         <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"
                     selectedIndex="0"
                     (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
-        <Label width="27.5%" col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Sec"
+               color="white" col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
     </DockLayout>
-    <DockLayout width="100%" height="33.33%" backgroundColor="white" stretchLastChild="true">
-        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="hours"
+
+    <DockLayout width="100%" height="20%" backgroundColor="black" stretchLastChild="true">
+        <Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="31%" fontSize="40"
+               text="Run" color="white" col="1" backgroundColor="black"></Label>
+        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"
                     selectedIndex="0"
                     (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
-        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="minutes"
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Min"
+               color="white" col="1" backgroundColor="black"></Label>
+        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"
                     selectedIndex="0"
                     (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
-        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="seconds"
-                    selectedIndex="0"
-                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Sec"
+               color="white" col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
     </DockLayout>
-    <DockLayout width="100%" height="33.33%" backgroundColor="white" stretchLastChild="true">
-        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="hours"
+
+    <DockLayout width="100%" height="20%" backgroundColor="black" stretchLastChild="true">
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="31%" fontSize="40"
+               text="Sprint" color="white" col="1" backgroundColor="black"></Label>
+        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"
                     selectedIndex="0"
                     (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
-        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="minutes"
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Min"
+               color="white" col="1" backgroundColor="black"></Label>
+        <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"
                     selectedIndex="0"
                     (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
-        <ListPicker width="33.33%" color="white" backgroundColor="black" dock="left" [items]="seconds"
-                    selectedIndex="0"
-                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Sec"
+               color="white" col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
     </DockLayout>
+    <DockLayout width="100%" height="10%" backgroundColor="black" stretchLastChild="true">
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="35%" color="white"></Label>
+        <ListPicker width="10%" color="white" backgroundColor="black" dock="left" [items]="seconds"
+                    selectedIndex="0"
+                    (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="20%" text="Repetition"
+               color="white" col="1" backgroundColor="black"></Label>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="35%" color="white"></Label>
+    </DockLayout>
+    <DockLayout width="100%" height="30%" backgroundColor="black" stretchLastChild="true">
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
+
+        <Button text="Start"
+                style="width:100;height:100;color:white;border-radius:100;border-width:2;border-color:white;background-color:black">
+        </Button>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="30%" color="white"
+               col="1" backgroundColor="black"></Label>
+
+        <Button text="Start"
+                style="width:100;height:100;color:white;border-radius:100;border-width:2;border-color:white;background-color:black">
+        </Button>
+        <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+               col="1" backgroundColor="black"></Label>
+
+    </DockLayout>
+
 </StackLayout>
