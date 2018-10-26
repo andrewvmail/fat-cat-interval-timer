@@ -2,11 +2,11 @@ import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
-  selector: "Home",
+  selector: "Timer",
   moduleId: module.id,
-  templateUrl: "./home.component.html"
+  templateUrl: "./timer.component.html"
 })
-export class HomeComponent implements OnInit {
+export class TimerComponent implements OnInit {
   constructor(private router: RouterExtensions) {}
 
   ngOnInit(): void {}

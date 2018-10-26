@@ -8,12 +8,11 @@ const Timer = () => {
   return context => {
     return {
       start(message) {
-        console.log('start timer')
+        console.log("start timer");
       }
     };
   };
 };
-
 
 const app = App(
   {
@@ -51,9 +50,9 @@ const app = App(
     }
   },
   {
-    devtools: Devtools({
-      host: "192.168.50.197:9999"
-    })
+    // devtools: Devtools({
+    //   host: "192.168.50.197:9999"
+    // })
   }
 );
 

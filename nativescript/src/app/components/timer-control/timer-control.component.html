@@ -1,0 +1,22 @@
+<DockLayout width="100%" height="20%" backgroundColor="black" stretchLastChild="true">
+    <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+           col="1" backgroundColor="black"></Label>
+
+
+    <Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="31%" fontSize="40"
+           [text]="label" color="white" col="1" backgroundColor="black"></Label>
+    <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"
+                selectedIndex="0"
+                (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+    <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Min"
+           color="white" col="1" backgroundColor="black"></Label>
+    <ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"
+                selectedIndex="0"
+                (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+    <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Sec"
+           color="white" col="1" backgroundColor="black"></Label>
+    <Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"
+           col="1" backgroundColor="black"></Label>
+
+
+</DockLayout>

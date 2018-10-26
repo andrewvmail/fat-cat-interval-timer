@@ -1,0 +1,111 @@
+<page-router-outlet tkMainContent></page-router-outlet>
+<!--<StackLayout backgroundColor="black">-->
+
+
+    <!--<timer-control [activity]="'walking'"-->
+                   <!--[minutesFrom]="0"-->
+                   <!--[minutesTo]="59"-->
+                   <!--[secondsFrom]="1"-->
+                   <!--[secondsTo]="59">-->
+    <!--</timer-control>-->
+
+    <!--<timer-control [activity]="'running'"-->
+                   <!--[minutesFrom]="0"-->
+                   <!--[minutesTo]="59"-->
+                   <!--[secondsFrom]="1"-->
+                   <!--[secondsTo]="59">-->
+    <!--</timer-control>-->
+
+    <!--<timer-control [activity]="'sprinting'"-->
+                   <!--[minutesFrom]="0"-->
+                   <!--[minutesTo]="59"-->
+                   <!--[secondsFrom]="1"-->
+                   <!--[secondsTo]="59">-->
+    <!--</timer-control>-->
+
+
+
+    <!--&lt;!&ndash;<DockLayout width="100%" height="20%" backgroundColor="black" stretchLastChild="true">&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="31%" fontSize="40"&ndash;&gt;-->
+    <!--&lt;!&ndash;text="Walk" color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"&ndash;&gt;-->
+    <!--&lt;!&ndash;selectedIndex="0"&ndash;&gt;-->
+    <!--&lt;!&ndash;(selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Min"&ndash;&gt;-->
+    <!--&lt;!&ndash;color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"&ndash;&gt;-->
+    <!--&lt;!&ndash;selectedIndex="0"&ndash;&gt;-->
+    <!--&lt;!&ndash;(selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Sec"&ndash;&gt;-->
+    <!--&lt;!&ndash;color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;</DockLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<DockLayout width="100%" height="20%" backgroundColor="black" stretchLastChild="true">&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="31%" fontSize="40"&ndash;&gt;-->
+    <!--&lt;!&ndash;text="Run" color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"&ndash;&gt;-->
+    <!--&lt;!&ndash;selectedIndex="0"&ndash;&gt;-->
+    <!--&lt;!&ndash;(selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Min"&ndash;&gt;-->
+    <!--&lt;!&ndash;color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"&ndash;&gt;-->
+    <!--&lt;!&ndash;selectedIndex="0"&ndash;&gt;-->
+    <!--&lt;!&ndash;(selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Sec"&ndash;&gt;-->
+    <!--&lt;!&ndash;color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;</DockLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<DockLayout width="100%" height="20%" backgroundColor="black" stretchLastChild="true">&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="left" textWrap="true" width="31%" fontSize="40"&ndash;&gt;-->
+    <!--&lt;!&ndash;text="Sprint" color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="minutes"&ndash;&gt;-->
+    <!--&lt;!&ndash;selectedIndex="0"&ndash;&gt;-->
+    <!--&lt;!&ndash;(selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Min"&ndash;&gt;-->
+    <!--&lt;!&ndash;color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ListPicker width="15%" color="white" backgroundColor="black" dock="left" [items]="seconds"&ndash;&gt;-->
+    <!--&lt;!&ndash;selectedIndex="0"&ndash;&gt;-->
+    <!--&lt;!&ndash;(selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" text="Sec"&ndash;&gt;-->
+    <!--&lt;!&ndash;color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;</DockLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;<DockLayout width="100%" height="10%" backgroundColor="black" stretchLastChild="true">&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="35%" color="white"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ListPicker width="10%" color="white" backgroundColor="black" dock="left" [items]="seconds"&ndash;&gt;-->
+    <!--&lt;!&ndash;selectedIndex="0"&ndash;&gt;-->
+    <!--&lt;!&ndash;(selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="20%" text="Repetition"&ndash;&gt;-->
+    <!--&lt;!&ndash;color="white" col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="35%" color="white"></Label>&ndash;&gt;-->
+    <!--&lt;!&ndash;</DockLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;<DockLayout width="100%" height="30%" backgroundColor="black" stretchLastChild="true">&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button text="Pause"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="width:100;height:100;color:white;border-radius:100;border-width:2;border-color:white;background-color:black">&ndash;&gt;-->
+    <!--&lt;!&ndash;</Button>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="30%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button text="Start"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="width:100;height:100;color:white;border-radius:100;border-width:2;border-color:white;background-color:black">&ndash;&gt;-->
+    <!--&lt;!&ndash;</Button>&ndash;&gt;-->
+    <!--&lt;!&ndash;<Label style.verticalAlignment="center" style.textAlignment="center" textWrap="true" width="10%" color="white"&ndash;&gt;-->
+    <!--&lt;!&ndash;col="1" backgroundColor="black"></Label>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</DockLayout>&ndash;&gt;-->
+
+<!--</StackLayout>-->
